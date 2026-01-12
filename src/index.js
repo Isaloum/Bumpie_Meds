@@ -7,6 +7,10 @@ const SafetyChecker = require('./services/SafetyChecker');
 const TrimesterAnalyzer = require('./services/TrimesterAnalyzer');
 const AuditService = require('./services/AuditService');
 const ReportGenerator = require('./services/ReportGenerator');
+const PregnancySafetyEngine = require('./services/pregnancy-safety-engine');
+const PregnancyInteractionChecker = require('./services/pregnancy-interaction-checker');
+const PregnancyRiskCalculator = require('./services/pregnancy-risk-calculator');
+const PregnancyAuditLogger = require('./services/pregnancy-audit-logger');
 const { validateConfig } = require('./utils/validators');
 const CONSTANTS = require('./utils/constants');
 
@@ -135,5 +139,10 @@ function initialize(config = {}) {
 module.exports = {
   initialize,
   BumpieMeds,
-  CONSTANTS
+  CONSTANTS,
+  // Export pregnancy safety modules directly
+  PregnancySafetyEngine,
+  PregnancyInteractionChecker,
+  PregnancyRiskCalculator,
+  PregnancyAuditLogger
 };
