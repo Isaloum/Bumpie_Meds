@@ -4,275 +4,814 @@
     "rxcui": "161",
     "name": "Acetaminophen",
     "genericName": "Acetaminophen",
-    "brandNames": ["Tylenol", "Paracetamol"],
+    "brandNames": [
+      "Tylenol",
+      "Paracetamol",
+      "Little Fevers",
+      "Bactimicina",
+      "Pamprin Max Formula",
+      "Pamprin Multi-Symptom",
+      "Pamprin Cramp Formula",
+      "Percogesic Reformulated Jan 2011",
+      "Premsyn PMS",
+      "Panadol PM",
+      "CounterAct Pain",
+      "Capacet",
+      "Nortemp",
+      "Acetadryl",
+      "Ringl",
+      "Pharbetol",
+      "Arthriten Inflammatory Pain",
+      "Backaid",
+      "Cetafen",
+      "Exaprin",
+      "Backaid IPF",
+      "Lortab",
+      "Primlev",
+      "Verdrocet",
+      "Excedrin Mild Headache",
+      "Excedrin PM Triple Action",
+      "Ninjacof A",
+      "Vanatol",
+      "Fioricet",
+      "Sed-Max",
+      "Panadol Extra",
+      "Arthriten Max",
+      "Apadaz",
+      "Panadol",
+      "Nalocet",
+      "Dvorah",
+      "Anacin AF",
+      "Bupap",
+      "Endocet",
+      "Esgic",
+      "Excedrin",
+      "Excedrin PM",
+      "Feverall",
+      "Fioricet with Codeine",
+      "Legatrin PM",
+      "Mapap",
+      "Marten-Tab",
+      "Norco",
+      "Redutemp",
+      "Repan",
+      "Saleto",
+      "Tempra Quicklets",
+      "Tencon",
+      "Tycolene",
+      "Tylenol Gelcap Extra Strength",
+      "Tylenol PM",
+      "Tylenol with Codeine",
+      "Unisom with Pain Relief",
+      "Vanquish",
+      "Zebutal",
+      "Acephen",
+      "Vtol",
+      "Allzital",
+      "Prolate",
+      "Combogesic",
+      "Exaprin Plus",
+      "Contragesic",
+      "Relagesic",
+      "Ultracet",
+      "Excedrin Tension Headache",
+      "Percocet",
+      "Lorcet",
+      "Frenadol",
+      "Dologesic",
+      "Hycet",
+      "Anabar",
+      "Ed Flex",
+      "By Ache",
+      "Excedrin Quick Tab",
+      "Comtrex Sore Throat Relief",
+      "Excedrin Back & Body",
+      "Anacin Advanced Headache Formula",
+      "Trezix",
+      "Tactinal",
+      "Backprin"
+    ],
     "pregnancyCategory": {
       "fda": "B",
       "trimester1": {
         "safe": true,
         "risk": "low",
-        "warnings": ["Generally safe when used as directed", "Do not exceed recommended dosage"],
-        "alternatives": [],
-        "maxDosage": "3000mg daily"
-      },
-      "trimester2": {
-        "safe": true,
-        "risk": "low",
-        "warnings": ["Generally safe when used as directed"],
-        "maxDosage": "3000mg daily"
-      },
-      "trimester3": {
-        "safe": true,
-        "risk": "low",
-        "warnings": ["Generally safe when used as directed"],
-        "maxDosage": "3000mg daily"
-      }
-    },
-    "contraindications": ["Liver disease", "Alcohol dependence"],
-    "sources": [
-      {
-        "type": "FDA",
-        "url": "https://www.fda.gov/drugs",
-        "date": "2025-11-01"
-      }
-    ],
-    "lastUpdated": "2025-12-01T00:00:00Z",
-    "verified": true
-  },
-  {
-    "id": "med_rxcui_1191",
-    "rxcui": "1191",
-    "name": "Aspirin",
-    "genericName": "Acetylsalicylic Acid",
-    "brandNames": ["Bayer Aspirin", "Ecotrin"],
-    "pregnancyCategory": {
-      "fda": "D",
-      "trimester1": {
-        "safe": false,
-        "risk": "high",
-        "warnings": [
-          "May cause birth defects in first trimester",
-          "Avoid unless prescribed by physician",
-          "Risk of miscarriage"
-        ],
-        "alternatives": ["Acetaminophen"]
-      },
-      "trimester2": {
-        "safe": true,
-        "risk": "low",
-        "warnings": ["Low-dose (81mg) may be acceptable with doctor approval"],
-        "maxDosage": "81mg daily"
-      },
-      "trimester3": {
-        "safe": false,
-        "risk": "high",
-        "warnings": [
-          "Risk of premature closure of ductus arteriosus",
-          "Bleeding complications during delivery",
-          "Avoid after week 32"
-        ],
-        "alternatives": ["Acetaminophen"]
-      }
-    },
-    "contraindications": [
-      "Third trimester pregnancy (after week 32)",
-      "History of bleeding disorders",
-      "Upcoming delivery"
-    ],
-    "sources": [
-      {
-        "type": "FDA",
-        "url": "https://www.fda.gov/drugs",
-        "date": "2024-01-15"
-      },
-      {
-        "type": "ACOG",
-        "url": "https://www.acog.org",
-        "date": "2023-11-20"
-      }
-    ],
-    "lastUpdated": "2025-12-01T00:00:00Z",
-    "verified": true
-  },
-  {
-    "id": "med_rxcui_4493",
-    "rxcui": "4493",
-    "name": "Ibuprofen",
-    "genericName": "Ibuprofen",
-    "brandNames": ["Advil", "Motrin"],
-    "pregnancyCategory": {
-      "fda": "D",
-      "trimester1": {
-        "safe": false,
-        "risk": "moderate",
-        "warnings": [
-          "Avoid in first trimester",
-          "May cause miscarriage",
-          "Not recommended during pregnancy"
-        ],
-        "alternatives": ["Acetaminophen"]
-      },
-      "trimester2": {
-        "safe": false,
-        "risk": "moderate",
-        "warnings": [
-          "Use only if benefits outweigh risks",
-          "Short-term use only with doctor approval"
-        ],
-        "alternatives": ["Acetaminophen"]
-      },
-      "trimester3": {
-        "safe": false,
-        "risk": "high",
-        "warnings": [
-          "Avoid completely in third trimester",
-          "Risk of premature closure of ductus arteriosus",
-          "May delay labor"
-        ],
-        "alternatives": ["Acetaminophen"]
-      }
-    },
-    "contraindications": [
-      "Third trimester pregnancy",
-      "History of kidney problems",
-      "Heart conditions"
-    ],
-    "sources": [
-      {
-        "type": "FDA",
-        "url": "https://www.fda.gov/drugs",
-        "date": "2024-06-10"
-      }
-    ],
-    "lastUpdated": "2025-12-01T00:00:00Z",
-    "verified": true
-  },
-  {
-    "id": "med_rxcui_3521",
-    "rxcui": "3521",
-    "name": "Isotretinoin",
-    "genericName": "Isotretinoin",
-    "brandNames": ["Accutane", "Claravis", "Absorica"],
-    "pregnancyCategory": {
-      "fda": "X",
-      "trimester1": {
-        "safe": false,
-        "risk": "severe",
-        "warnings": [
-          "ABSOLUTELY CONTRAINDICATED - DO NOT USE",
-          "Causes severe birth defects",
-          "Requires negative pregnancy test before use",
-          "Must use two forms of contraception"
-        ],
-        "alternatives": ["Consult dermatologist for safe alternatives"]
-      },
-      "trimester2": {
-        "safe": false,
-        "risk": "severe",
-        "warnings": [
-          "ABSOLUTELY CONTRAINDICATED - DO NOT USE",
-          "Severe birth defects throughout pregnancy"
-        ],
-        "alternatives": ["Consult dermatologist"]
-      },
-      "trimester3": {
-        "safe": false,
-        "risk": "severe",
-        "warnings": [
-          "ABSOLUTELY CONTRAINDICATED - DO NOT USE",
-          "Severe birth defects throughout pregnancy"
-        ],
-        "alternatives": ["Consult dermatologist"]
-      }
-    },
-    "contraindications": [
-      "Pregnancy",
-      "Planning pregnancy",
-      "No reliable contraception"
-    ],
-    "sources": [
-      {
-        "type": "FDA",
-        "url": "https://www.fda.gov/drugs/postmarket-drug-safety-information-patients-and-providers/isotretinoin-accutane-questions-and-answers",
-        "date": "2023-08-15"
-      }
-    ],
-    "lastUpdated": "2025-12-01T00:00:00Z",
-    "verified": true
-  },
-  {
-    "id": "med_rxcui_8123",
-    "rxcui": "8123",
-    "name": "Prenatal Vitamins",
-    "genericName": "Prenatal Multivitamin",
-    "brandNames": ["Prenate", "CitraNatal", "One A Day Prenatal"],
-    "pregnancyCategory": {
-      "fda": "A",
-      "trimester1": {
-        "safe": true,
-        "risk": "minimal",
-        "warnings": ["Recommended daily", "Especially important for folic acid"],
+        "warnings": [],
         "alternatives": []
       },
       "trimester2": {
         "safe": true,
-        "risk": "minimal",
-        "warnings": ["Continue daily use"],
+        "risk": "low",
+        "warnings": [],
         "alternatives": []
       },
       "trimester3": {
         "safe": true,
-        "risk": "minimal",
-        "warnings": ["Continue daily use"],
+        "risk": "low",
+        "warnings": [],
         "alternatives": []
       }
     },
     "contraindications": [],
     "sources": [
       {
-        "type": "ACOG",
-        "url": "https://www.acog.org",
-        "date": "2024-03-01"
+        "type": "RxNorm",
+        "url": "https://rxnav.nlm.nih.gov/REST/rxcui/161",
+        "date": "2026-01-12"
       }
     ],
-    "lastUpdated": "2025-12-01T00:00:00Z",
-    "verified": true
+    "lastUpdated": "2026-01-12T04:29:24.743Z",
+    "verified": false
   },
   {
     "id": "med_rxcui_5640",
     "rxcui": "5640",
+    "name": "Ibuprofen",
+    "genericName": "Ibuprofen",
+    "brandNames": [
+      "Advil",
+      "Motrin",
+      "Duexis",
+      "Counteract IB",
+      "Proprinal",
+      "Ibudone",
+      "Xylon",
+      "Genpril",
+      "Ibu",
+      "Vicoprofen",
+      "Combogesic",
+      "Samson 8",
+      "Reprexain",
+      "Neoprofen",
+      "Wal-Profen",
+      "Ibuprohm",
+      "Caldolor",
+      "Motrin PM",
+      "Addaprin"
+    ],
+    "pregnancyCategory": {
+      "fda": "D",
+      "trimester1": {
+        "safe": false,
+        "risk": "high",
+        "warnings": [],
+        "alternatives": []
+      },
+      "trimester2": {
+        "safe": false,
+        "risk": "high",
+        "warnings": [],
+        "alternatives": []
+      },
+      "trimester3": {
+        "safe": false,
+        "risk": "high",
+        "warnings": [],
+        "alternatives": []
+      }
+    },
+    "contraindications": [],
+    "sources": [
+      {
+        "type": "RxNorm",
+        "url": "https://rxnav.nlm.nih.gov/REST/rxcui/5640",
+        "date": "2026-01-12"
+      }
+    ],
+    "lastUpdated": "2026-01-12T04:29:27.831Z",
+    "verified": false
+  },
+  {
+    "id": "med_rxcui_1191",
+    "rxcui": "1191",
+    "name": "Aspirin",
+    "genericName": "Aspirin",
+    "brandNames": [
+      "Bayer",
+      "Ecotrin",
+      "Bufferin",
+      "Pamprin Max Formula",
+      "Stanback Headache Powder Reformulated Jan 2011",
+      "BC Arthritis",
+      "BC Original Formula",
+      "Arthriten Inflammatory Pain",
+      "Bromo Seltzer Antacid Pain Reliever",
+      "Exaprin",
+      "Backaid IPF",
+      "Ascomp",
+      "Excedrin PM Triple Action",
+      "Aspi-Cor",
+      "Durlaza",
+      "Alka-Seltzer",
+      "Yosprala",
+      "Arthriten Max",
+      "Aspergum",
+      "Anacin",
+      "Bayer Aspirin",
+      "Excedrin",
+      "Norgesic",
+      "Norwich Aspirin",
+      "P-A-C Analgesic",
+      "Saleto",
+      "St. Joseph Aspirin",
+      "Vanquish",
+      "Equagesic",
+      "Vazalore",
+      "Orphengesic",
+      "Exaprin Plus",
+      "Exaprin Extra Strength",
+      "Excedrin Back & Body",
+      "Anacin Advanced Headache Formula",
+      "Anacin Aspirin Regimen",
+      "Miniprin"
+    ],
+    "pregnancyCategory": {
+      "fda": "D",
+      "trimester1": {
+        "safe": false,
+        "risk": "high",
+        "warnings": [],
+        "alternatives": []
+      },
+      "trimester2": {
+        "safe": false,
+        "risk": "high",
+        "warnings": [],
+        "alternatives": []
+      },
+      "trimester3": {
+        "safe": false,
+        "risk": "high",
+        "warnings": [],
+        "alternatives": []
+      }
+    },
+    "contraindications": [],
+    "sources": [
+      {
+        "type": "RxNorm",
+        "url": "https://rxnav.nlm.nih.gov/REST/rxcui/1191",
+        "date": "2026-01-12"
+      }
+    ],
+    "lastUpdated": "2026-01-12T04:29:29.715Z",
+    "verified": false
+  },
+  {
+    "id": "med_rxcui_29046",
+    "rxcui": "29046",
+    "name": "Lisinopril",
+    "genericName": "Lisinopril",
+    "brandNames": [
+      "Prinivil",
+      "Zestril",
+      "Qbrelis",
+      "Zestoretic"
+    ],
+    "pregnancyCategory": {
+      "fda": "D",
+      "trimester1": {
+        "safe": false,
+        "risk": "high",
+        "warnings": [],
+        "alternatives": []
+      },
+      "trimester2": {
+        "safe": false,
+        "risk": "high",
+        "warnings": [],
+        "alternatives": []
+      },
+      "trimester3": {
+        "safe": false,
+        "risk": "high",
+        "warnings": [],
+        "alternatives": []
+      }
+    },
+    "contraindications": [],
+    "sources": [
+      {
+        "type": "RxNorm",
+        "url": "https://rxnav.nlm.nih.gov/REST/rxcui/29046",
+        "date": "2026-01-12"
+      }
+    ],
+    "lastUpdated": "2026-01-12T04:29:31.630Z",
+    "verified": false
+  },
+  {
+    "id": "med_rxcui_6809",
+    "rxcui": "6809",
     "name": "Metformin",
     "genericName": "Metformin",
-    "brandNames": ["Glucophage", "Fortamet"],
+    "brandNames": [
+      "Glucophage",
+      "Fortamet",
+      "Glumetza",
+      "Kazano",
+      "Jentadueto",
+      "Kombiglyze",
+      "Janumet",
+      "Invokamet",
+      "Xigduo",
+      "Synjardy",
+      "Segluromet",
+      "Trijardy",
+      "Zituvimet",
+      "Riomet",
+      "Actoplus Met"
+    ],
     "pregnancyCategory": {
       "fda": "B",
       "trimester1": {
         "safe": true,
         "risk": "low",
-        "warnings": ["Generally safe for gestational diabetes", "Monitor blood sugar closely"],
+        "warnings": [],
         "alternatives": []
       },
       "trimester2": {
         "safe": true,
         "risk": "low",
-        "warnings": ["Continue under medical supervision"],
+        "warnings": [],
         "alternatives": []
       },
       "trimester3": {
         "safe": true,
         "risk": "low",
-        "warnings": ["Continue under medical supervision"],
+        "warnings": [],
         "alternatives": []
       }
     },
-    "contraindications": ["Kidney disease", "Lactic acidosis history"],
+    "contraindications": [],
     "sources": [
       {
-        "type": "FDA",
-        "url": "https://www.fda.gov/drugs",
-        "date": "2024-09-12"
+        "type": "RxNorm",
+        "url": "https://rxnav.nlm.nih.gov/REST/rxcui/6809",
+        "date": "2026-01-12"
       }
     ],
-    "lastUpdated": "2025-12-01T00:00:00Z",
-    "verified": true
+    "lastUpdated": "2026-01-12T04:29:33.383Z",
+    "verified": false
+  },
+  {
+    "id": "med_rxcui_7646",
+    "rxcui": "7646",
+    "name": "Omeprazole",
+    "genericName": "Omeprazole",
+    "brandNames": [
+      "Prilosec",
+      "Losec",
+      "Yosprala",
+      "Talicia",
+      "Konvomep",
+      "Zegerid Reformulated Aug 2006",
+      "UlcerGard"
+    ],
+    "pregnancyCategory": {
+      "fda": "C",
+      "trimester1": {
+        "safe": false,
+        "risk": "moderate",
+        "warnings": [],
+        "alternatives": []
+      },
+      "trimester2": {
+        "safe": false,
+        "risk": "moderate",
+        "warnings": [],
+        "alternatives": []
+      },
+      "trimester3": {
+        "safe": false,
+        "risk": "moderate",
+        "warnings": [],
+        "alternatives": []
+      }
+    },
+    "contraindications": [],
+    "sources": [
+      {
+        "type": "RxNorm",
+        "url": "https://rxnav.nlm.nih.gov/REST/rxcui/7646",
+        "date": "2026-01-12"
+      }
+    ],
+    "lastUpdated": "2026-01-12T04:29:35.185Z",
+    "verified": false
+  },
+  {
+    "id": "med_rxcui_10582",
+    "rxcui": "10582",
+    "name": "Levothyroxine",
+    "genericName": "Levothyroxine",
+    "brandNames": [
+      "Synthroid",
+      "Levoxyl",
+      "Unithroid",
+      "Thyro-Tabs",
+      "ThyroKare",
+      "Euthyrox",
+      "Levo-T",
+      "Thyquidity",
+      "Ermeza",
+      "Thyrocryn",
+      "Thyrolar",
+      "Tirosint"
+    ],
+    "pregnancyCategory": {
+      "fda": "A",
+      "trimester1": {
+        "safe": true,
+        "risk": "minimal",
+        "warnings": [],
+        "alternatives": []
+      },
+      "trimester2": {
+        "safe": true,
+        "risk": "minimal",
+        "warnings": [],
+        "alternatives": []
+      },
+      "trimester3": {
+        "safe": true,
+        "risk": "minimal",
+        "warnings": [],
+        "alternatives": []
+      }
+    },
+    "contraindications": [],
+    "sources": [
+      {
+        "type": "RxNorm",
+        "url": "https://rxnav.nlm.nih.gov/REST/rxcui/10582",
+        "date": "2026-01-12"
+      }
+    ],
+    "lastUpdated": "2026-01-12T04:29:36.922Z",
+    "verified": false
+  },
+  {
+    "id": "med_rxcui_83367",
+    "rxcui": "83367",
+    "name": "Atorvastatin",
+    "genericName": "Atorvastatin",
+    "brandNames": [
+      "Lipitor",
+      "Atorvaliq",
+      "Caduet"
+    ],
+    "pregnancyCategory": {
+      "fda": "X",
+      "trimester1": {
+        "safe": false,
+        "risk": "severe",
+        "warnings": [],
+        "alternatives": []
+      },
+      "trimester2": {
+        "safe": false,
+        "risk": "severe",
+        "warnings": [],
+        "alternatives": []
+      },
+      "trimester3": {
+        "safe": false,
+        "risk": "severe",
+        "warnings": [],
+        "alternatives": []
+      }
+    },
+    "contraindications": [],
+    "sources": [
+      {
+        "type": "RxNorm",
+        "url": "https://rxnav.nlm.nih.gov/REST/rxcui/83367",
+        "date": "2026-01-12"
+      }
+    ],
+    "lastUpdated": "2026-01-12T04:29:38.661Z",
+    "verified": false
+  },
+  {
+    "id": "med_rxcui_17767",
+    "rxcui": "17767",
+    "name": "Amlodipine",
+    "genericName": "Amlodipine",
+    "brandNames": [
+      "Norvasc",
+      "Tribenzor",
+      "Exforge HCT",
+      "Twynsta",
+      "Prestalia",
+      "Consensi",
+      "Lotrel",
+      "Katerzia",
+      "Norliqva",
+      "Sdamlo",
+      "Widaplik",
+      "Caduet",
+      "Exforge",
+      "Azor"
+    ],
+    "pregnancyCategory": {
+      "fda": "C",
+      "trimester1": {
+        "safe": false,
+        "risk": "moderate",
+        "warnings": [],
+        "alternatives": []
+      },
+      "trimester2": {
+        "safe": false,
+        "risk": "moderate",
+        "warnings": [],
+        "alternatives": []
+      },
+      "trimester3": {
+        "safe": false,
+        "risk": "moderate",
+        "warnings": [],
+        "alternatives": []
+      }
+    },
+    "contraindications": [],
+    "sources": [
+      {
+        "type": "RxNorm",
+        "url": "https://rxnav.nlm.nih.gov/REST/rxcui/17767",
+        "date": "2026-01-12"
+      }
+    ],
+    "lastUpdated": "2026-01-12T04:29:40.400Z",
+    "verified": false
+  },
+  {
+    "id": "med_rxcui_435",
+    "rxcui": "435",
+    "name": "Albuterol",
+    "genericName": "Albuterol",
+    "brandNames": [
+      "ProAir",
+      "Ventolin",
+      "Proventil",
+      "Combivent",
+      "Airsupra"
+    ],
+    "pregnancyCategory": {
+      "fda": "C",
+      "trimester1": {
+        "safe": false,
+        "risk": "moderate",
+        "warnings": [],
+        "alternatives": []
+      },
+      "trimester2": {
+        "safe": false,
+        "risk": "moderate",
+        "warnings": [],
+        "alternatives": []
+      },
+      "trimester3": {
+        "safe": false,
+        "risk": "moderate",
+        "warnings": [],
+        "alternatives": []
+      }
+    },
+    "contraindications": [],
+    "sources": [
+      {
+        "type": "RxNorm",
+        "url": "https://rxnav.nlm.nih.gov/REST/rxcui/435",
+        "date": "2026-01-12"
+      }
+    ],
+    "lastUpdated": "2026-01-12T04:29:42.168Z",
+    "verified": false
+  },
+  {
+    "id": "med_rxcui_36437",
+    "rxcui": "36437",
+    "name": "Sertraline",
+    "genericName": "Sertraline",
+    "brandNames": [
+      "Zoloft"
+    ],
+    "pregnancyCategory": {
+      "fda": "C",
+      "trimester1": {
+        "safe": false,
+        "risk": "moderate",
+        "warnings": [],
+        "alternatives": []
+      },
+      "trimester2": {
+        "safe": false,
+        "risk": "moderate",
+        "warnings": [],
+        "alternatives": []
+      },
+      "trimester3": {
+        "safe": false,
+        "risk": "moderate",
+        "warnings": [],
+        "alternatives": []
+      }
+    },
+    "contraindications": [],
+    "sources": [
+      {
+        "type": "RxNorm",
+        "url": "https://rxnav.nlm.nih.gov/REST/rxcui/36437",
+        "date": "2026-01-12"
+      }
+    ],
+    "lastUpdated": "2026-01-12T04:29:43.903Z",
+    "verified": false
+  },
+  {
+    "id": "med_rxcui_25480",
+    "rxcui": "25480",
+    "name": "Gabapentin",
+    "genericName": "Gabapentin",
+    "brandNames": [
+      "Neurontin",
+      "Gralise",
+      "Horizant",
+      "Gabarone"
+    ],
+    "pregnancyCategory": {
+      "fda": "C",
+      "trimester1": {
+        "safe": false,
+        "risk": "moderate",
+        "warnings": [],
+        "alternatives": []
+      },
+      "trimester2": {
+        "safe": false,
+        "risk": "moderate",
+        "warnings": [],
+        "alternatives": []
+      },
+      "trimester3": {
+        "safe": false,
+        "risk": "moderate",
+        "warnings": [],
+        "alternatives": []
+      }
+    },
+    "contraindications": [],
+    "sources": [
+      {
+        "type": "RxNorm",
+        "url": "https://rxnav.nlm.nih.gov/REST/rxcui/25480",
+        "date": "2026-01-12"
+      }
+    ],
+    "lastUpdated": "2026-01-12T04:29:45.627Z",
+    "verified": false
+  },
+  {
+    "id": "med_rxcui_5487",
+    "rxcui": "5487",
+    "name": "Hydrochlorothiazide",
+    "genericName": "Hydrochlorothiazide",
+    "brandNames": [
+      "Microzide",
+      "Tribenzor",
+      "Exforge HCT",
+      "Tekturna HCT",
+      "Accuretic",
+      "Aldactazide",
+      "Vaseretic",
+      "Diovan HCT",
+      "Hyzaar",
+      "Lopressor HCT",
+      "Lotensin HCT",
+      "Dyazide",
+      "Avalide",
+      "Inzirqo",
+      "Atacand HCT",
+      "Micardis-HCT",
+      "Benicar HCT",
+      "Maxzide",
+      "Ziac",
+      "Zestoretic"
+    ],
+    "pregnancyCategory": {
+      "fda": "B",
+      "trimester1": {
+        "safe": true,
+        "risk": "low",
+        "warnings": [],
+        "alternatives": []
+      },
+      "trimester2": {
+        "safe": true,
+        "risk": "low",
+        "warnings": [],
+        "alternatives": []
+      },
+      "trimester3": {
+        "safe": true,
+        "risk": "low",
+        "warnings": [],
+        "alternatives": []
+      }
+    },
+    "contraindications": [],
+    "sources": [
+      {
+        "type": "RxNorm",
+        "url": "https://rxnav.nlm.nih.gov/REST/rxcui/5487",
+        "date": "2026-01-12"
+      }
+    ],
+    "lastUpdated": "2026-01-12T04:29:47.401Z",
+    "verified": false
+  },
+  {
+    "id": "med_rxcui_52175",
+    "rxcui": "52175",
+    "name": "Losartan",
+    "genericName": "Losartan",
+    "brandNames": [
+      "Cozaar",
+      "Hyzaar",
+      "Arbli"
+    ],
+    "pregnancyCategory": {
+      "fda": "D",
+      "trimester1": {
+        "safe": false,
+        "risk": "high",
+        "warnings": [],
+        "alternatives": []
+      },
+      "trimester2": {
+        "safe": false,
+        "risk": "high",
+        "warnings": [],
+        "alternatives": []
+      },
+      "trimester3": {
+        "safe": false,
+        "risk": "high",
+        "warnings": [],
+        "alternatives": []
+      }
+    },
+    "contraindications": [],
+    "sources": [
+      {
+        "type": "RxNorm",
+        "url": "https://rxnav.nlm.nih.gov/REST/rxcui/52175",
+        "date": "2026-01-12"
+      }
+    ],
+    "lastUpdated": "2026-01-12T04:29:49.191Z",
+    "verified": false
+  },
+  {
+    "id": "med_rxcui_88249",
+    "rxcui": "88249",
+    "name": "Montelukast",
+    "genericName": "Montelukast",
+    "brandNames": [
+      "Singulair"
+    ],
+    "pregnancyCategory": {
+      "fda": "B",
+      "trimester1": {
+        "safe": true,
+        "risk": "low",
+        "warnings": [],
+        "alternatives": []
+      },
+      "trimester2": {
+        "safe": true,
+        "risk": "low",
+        "warnings": [],
+        "alternatives": []
+      },
+      "trimester3": {
+        "safe": true,
+        "risk": "low",
+        "warnings": [],
+        "alternatives": []
+      }
+    },
+    "contraindications": [],
+    "sources": [
+      {
+        "type": "RxNorm",
+        "url": "https://rxnav.nlm.nih.gov/REST/rxcui/88249",
+        "date": "2026-01-12"
+      }
+    ],
+    "lastUpdated": "2026-01-12T04:29:50.914Z",
+    "verified": false
   }
 ]

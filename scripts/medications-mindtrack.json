@@ -1,0 +1,537 @@
+[
+  {
+    "id": 1,
+    "name": "Acetaminophen",
+    "brandNames": [
+      "Tylenol",
+      "Paracetamol",
+      "Little Fevers",
+      "Bactimicina",
+      "Pamprin Max Formula",
+      "Pamprin Multi-Symptom",
+      "Pamprin Cramp Formula",
+      "Percogesic Reformulated Jan 2011",
+      "Premsyn PMS",
+      "Panadol PM",
+      "CounterAct Pain",
+      "Capacet",
+      "Nortemp",
+      "Acetadryl",
+      "Ringl",
+      "Pharbetol",
+      "Arthriten Inflammatory Pain",
+      "Backaid",
+      "Cetafen",
+      "Exaprin",
+      "Backaid IPF",
+      "Lortab",
+      "Primlev",
+      "Verdrocet",
+      "Excedrin Mild Headache",
+      "Excedrin PM Triple Action",
+      "Ninjacof A",
+      "Vanatol",
+      "Fioricet",
+      "Sed-Max",
+      "Panadol Extra",
+      "Arthriten Max",
+      "Apadaz",
+      "Panadol",
+      "Nalocet",
+      "Dvorah",
+      "Anacin AF",
+      "Bupap",
+      "Endocet",
+      "Esgic",
+      "Excedrin",
+      "Excedrin PM",
+      "Feverall",
+      "Fioricet with Codeine",
+      "Legatrin PM",
+      "Mapap",
+      "Marten-Tab",
+      "Norco",
+      "Redutemp",
+      "Repan",
+      "Saleto",
+      "Tempra Quicklets",
+      "Tencon",
+      "Tycolene",
+      "Tylenol Gelcap Extra Strength",
+      "Tylenol PM",
+      "Tylenol with Codeine",
+      "Unisom with Pain Relief",
+      "Vanquish",
+      "Zebutal",
+      "Acephen",
+      "Vtol",
+      "Allzital",
+      "Prolate",
+      "Combogesic",
+      "Exaprin Plus",
+      "Contragesic",
+      "Relagesic",
+      "Ultracet",
+      "Excedrin Tension Headache",
+      "Percocet",
+      "Lorcet",
+      "Frenadol",
+      "Dologesic",
+      "Hycet",
+      "Anabar",
+      "Ed Flex",
+      "By Ache",
+      "Excedrin Quick Tab",
+      "Comtrex Sore Throat Relief",
+      "Excedrin Back & Body",
+      "Anacin Advanced Headache Formula",
+      "Trezix",
+      "Tactinal",
+      "Backprin"
+    ],
+    "category": "Analgesic/Antipyretic",
+    "dosages": [
+      "325mg",
+      "500mg",
+      "650mg"
+    ],
+    "forms": [
+      "Tablet",
+      "Capsule",
+      "Liquid"
+    ],
+    "frequency": "Every 4-6 hours as needed",
+    "manufacturer": "Johnson & Johnson",
+    "rxnormId": "161",
+    "ndcCodes": []
+  },
+  {
+    "id": 2,
+    "name": "Ibuprofen",
+    "brandNames": [
+      "Advil",
+      "Motrin",
+      "Duexis",
+      "Counteract IB",
+      "Proprinal",
+      "Ibudone",
+      "Xylon",
+      "Genpril",
+      "Ibu",
+      "Vicoprofen",
+      "Combogesic",
+      "Samson 8",
+      "Reprexain",
+      "Neoprofen",
+      "Wal-Profen",
+      "Ibuprohm",
+      "Caldolor",
+      "Motrin PM",
+      "Addaprin"
+    ],
+    "category": "NSAID/Pain Relief",
+    "dosages": [
+      "200mg",
+      "400mg",
+      "600mg",
+      "800mg"
+    ],
+    "forms": [
+      "Tablet",
+      "Capsule",
+      "Liquid"
+    ],
+    "frequency": "Every 6-8 hours with food",
+    "manufacturer": "Pfizer",
+    "rxnormId": "5640",
+    "ndcCodes": []
+  },
+  {
+    "id": 3,
+    "name": "Aspirin",
+    "brandNames": [
+      "Bayer",
+      "Ecotrin",
+      "Bufferin",
+      "Pamprin Max Formula",
+      "Stanback Headache Powder Reformulated Jan 2011",
+      "BC Arthritis",
+      "BC Original Formula",
+      "Arthriten Inflammatory Pain",
+      "Bromo Seltzer Antacid Pain Reliever",
+      "Exaprin",
+      "Backaid IPF",
+      "Ascomp",
+      "Excedrin PM Triple Action",
+      "Aspi-Cor",
+      "Durlaza",
+      "Alka-Seltzer",
+      "Yosprala",
+      "Arthriten Max",
+      "Aspergum",
+      "Anacin",
+      "Bayer Aspirin",
+      "Excedrin",
+      "Norgesic",
+      "Norwich Aspirin",
+      "P-A-C Analgesic",
+      "Saleto",
+      "St. Joseph Aspirin",
+      "Vanquish",
+      "Equagesic",
+      "Vazalore",
+      "Orphengesic",
+      "Exaprin Plus",
+      "Exaprin Extra Strength",
+      "Excedrin Back & Body",
+      "Anacin Advanced Headache Formula",
+      "Anacin Aspirin Regimen",
+      "Miniprin"
+    ],
+    "category": "NSAID/Antiplatelet",
+    "dosages": [
+      "81mg",
+      "325mg",
+      "500mg"
+    ],
+    "forms": [
+      "Tablet",
+      "Chewable",
+      "Enteric-coated"
+    ],
+    "frequency": "Once daily (low-dose) or as directed",
+    "manufacturer": "Bayer",
+    "rxnormId": "1191",
+    "ndcCodes": []
+  },
+  {
+    "id": 4,
+    "name": "Lisinopril",
+    "brandNames": [
+      "Prinivil",
+      "Zestril",
+      "Qbrelis",
+      "Zestoretic"
+    ],
+    "category": "ACE Inhibitor/Blood Pressure",
+    "dosages": [
+      "2.5mg",
+      "5mg",
+      "10mg",
+      "20mg",
+      "40mg"
+    ],
+    "forms": [
+      "Tablet"
+    ],
+    "frequency": "Once daily",
+    "manufacturer": "AstraZeneca",
+    "rxnormId": "29046",
+    "ndcCodes": []
+  },
+  {
+    "id": 5,
+    "name": "Metformin",
+    "brandNames": [
+      "Glucophage",
+      "Fortamet",
+      "Glumetza",
+      "Kazano",
+      "Jentadueto",
+      "Kombiglyze",
+      "Janumet",
+      "Invokamet",
+      "Xigduo",
+      "Synjardy",
+      "Segluromet",
+      "Trijardy",
+      "Zituvimet",
+      "Riomet",
+      "Actoplus Met"
+    ],
+    "category": "Antidiabetic/Biguanide",
+    "dosages": [
+      "500mg",
+      "850mg",
+      "1000mg"
+    ],
+    "forms": [
+      "Tablet",
+      "Extended-release"
+    ],
+    "frequency": "Twice daily with meals",
+    "manufacturer": "Bristol-Myers Squibb",
+    "rxnormId": "6809",
+    "ndcCodes": []
+  },
+  {
+    "id": 6,
+    "name": "Omeprazole",
+    "brandNames": [
+      "Prilosec",
+      "Losec",
+      "Yosprala",
+      "Talicia",
+      "Konvomep",
+      "Zegerid Reformulated Aug 2006",
+      "UlcerGard"
+    ],
+    "category": "Proton Pump Inhibitor/Acid Reducer",
+    "dosages": [
+      "10mg",
+      "20mg",
+      "40mg"
+    ],
+    "forms": [
+      "Capsule",
+      "Tablet"
+    ],
+    "frequency": "Once daily before meal",
+    "manufacturer": "AstraZeneca",
+    "rxnormId": "7646",
+    "ndcCodes": []
+  },
+  {
+    "id": 7,
+    "name": "Levothyroxine",
+    "brandNames": [
+      "Synthroid",
+      "Levoxyl",
+      "Unithroid",
+      "Thyro-Tabs",
+      "ThyroKare",
+      "Euthyrox",
+      "Levo-T",
+      "Thyquidity",
+      "Ermeza",
+      "Thyrocryn",
+      "Thyrolar",
+      "Tirosint"
+    ],
+    "category": "Thyroid Hormone",
+    "dosages": [
+      "25mcg",
+      "50mcg",
+      "75mcg",
+      "100mcg",
+      "125mcg",
+      "150mcg"
+    ],
+    "forms": [
+      "Tablet"
+    ],
+    "frequency": "Once daily on empty stomach",
+    "manufacturer": "Abbott Laboratories",
+    "rxnormId": "10582",
+    "ndcCodes": []
+  },
+  {
+    "id": 8,
+    "name": "Atorvastatin",
+    "brandNames": [
+      "Lipitor",
+      "Atorvaliq",
+      "Caduet"
+    ],
+    "category": "Statin/Cholesterol",
+    "dosages": [
+      "10mg",
+      "20mg",
+      "40mg",
+      "80mg"
+    ],
+    "forms": [
+      "Tablet"
+    ],
+    "frequency": "Once daily",
+    "manufacturer": "Pfizer",
+    "rxnormId": "83367",
+    "ndcCodes": []
+  },
+  {
+    "id": 9,
+    "name": "Amlodipine",
+    "brandNames": [
+      "Norvasc",
+      "Tribenzor",
+      "Exforge HCT",
+      "Twynsta",
+      "Prestalia",
+      "Consensi",
+      "Lotrel",
+      "Katerzia",
+      "Norliqva",
+      "Sdamlo",
+      "Widaplik",
+      "Caduet",
+      "Exforge",
+      "Azor"
+    ],
+    "category": "Calcium Channel Blocker/Blood Pressure",
+    "dosages": [
+      "2.5mg",
+      "5mg",
+      "10mg"
+    ],
+    "forms": [
+      "Tablet"
+    ],
+    "frequency": "Once daily",
+    "manufacturer": "Pfizer",
+    "rxnormId": "17767",
+    "ndcCodes": []
+  },
+  {
+    "id": 10,
+    "name": "Albuterol",
+    "brandNames": [
+      "ProAir",
+      "Ventolin",
+      "Proventil",
+      "Combivent",
+      "Airsupra"
+    ],
+    "category": "Bronchodilator/Asthma",
+    "dosages": [
+      "90mcg/inhalation"
+    ],
+    "forms": [
+      "Inhaler",
+      "Nebulizer solution"
+    ],
+    "frequency": "As needed for symptoms",
+    "manufacturer": "GlaxoSmithKline",
+    "rxnormId": "435",
+    "ndcCodes": []
+  },
+  {
+    "id": 11,
+    "name": "Sertraline",
+    "brandNames": [
+      "Zoloft"
+    ],
+    "category": "SSRI/Antidepressant",
+    "dosages": [
+      "25mg",
+      "50mg",
+      "100mg"
+    ],
+    "forms": [
+      "Tablet",
+      "Oral solution"
+    ],
+    "frequency": "Once daily",
+    "manufacturer": "Pfizer",
+    "rxnormId": "36437",
+    "ndcCodes": []
+  },
+  {
+    "id": 12,
+    "name": "Gabapentin",
+    "brandNames": [
+      "Neurontin",
+      "Gralise",
+      "Horizant",
+      "Gabarone"
+    ],
+    "category": "Anticonvulsant/Nerve Pain",
+    "dosages": [
+      "100mg",
+      "300mg",
+      "400mg",
+      "600mg",
+      "800mg"
+    ],
+    "forms": [
+      "Capsule",
+      "Tablet"
+    ],
+    "frequency": "Three times daily",
+    "manufacturer": "Pfizer",
+    "rxnormId": "25480",
+    "ndcCodes": []
+  },
+  {
+    "id": 13,
+    "name": "Hydrochlorothiazide",
+    "brandNames": [
+      "Microzide",
+      "Tribenzor",
+      "Exforge HCT",
+      "Tekturna HCT",
+      "Accuretic",
+      "Aldactazide",
+      "Vaseretic",
+      "Diovan HCT",
+      "Hyzaar",
+      "Lopressor HCT",
+      "Lotensin HCT",
+      "Dyazide",
+      "Avalide",
+      "Inzirqo",
+      "Atacand HCT",
+      "Micardis-HCT",
+      "Benicar HCT",
+      "Maxzide",
+      "Ziac",
+      "Zestoretic"
+    ],
+    "category": "Diuretic/Blood Pressure",
+    "dosages": [
+      "12.5mg",
+      "25mg",
+      "50mg"
+    ],
+    "forms": [
+      "Tablet",
+      "Capsule"
+    ],
+    "frequency": "Once daily in morning",
+    "manufacturer": "Various",
+    "rxnormId": "5487",
+    "ndcCodes": []
+  },
+  {
+    "id": 14,
+    "name": "Losartan",
+    "brandNames": [
+      "Cozaar",
+      "Hyzaar",
+      "Arbli"
+    ],
+    "category": "ARB/Blood Pressure",
+    "dosages": [
+      "25mg",
+      "50mg",
+      "100mg"
+    ],
+    "forms": [
+      "Tablet"
+    ],
+    "frequency": "Once or twice daily",
+    "manufacturer": "Merck",
+    "rxnormId": "52175",
+    "ndcCodes": []
+  },
+  {
+    "id": 15,
+    "name": "Montelukast",
+    "brandNames": [
+      "Singulair"
+    ],
+    "category": "Leukotriene Inhibitor/Asthma",
+    "dosages": [
+      "4mg",
+      "5mg",
+      "10mg"
+    ],
+    "forms": [
+      "Tablet",
+      "Chewable"
+    ],
+    "frequency": "Once daily in evening",
+    "manufacturer": "Merck",
+    "rxnormId": "88249",
+    "ndcCodes": []
+  }
+]

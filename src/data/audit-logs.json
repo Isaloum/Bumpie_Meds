@@ -1,1 +1,95 @@
-[]
+[
+  {
+    "id": "audit_1768189694437_tlvvjx5",
+    "timestamp": "2026-01-12T03:48:14.437Z",
+    "action": "SAFETY_CHECK",
+    "medication": {
+      "rxcui": "161",
+      "name": "Acetaminophen",
+      "dosage": null
+    },
+    "patient": {
+      "id": null,
+      "weekOfPregnancy": 24,
+      "trimester": 2
+    },
+    "result": {
+      "safe": true,
+      "category": "B",
+      "riskLevel": "low",
+      "warnings": [
+        "Generally safe when used as directed"
+      ],
+      "recommendedAction": "Monitor"
+    },
+    "context": {},
+    "metadata": {
+      "processingTimeMs": 0,
+      "dataVersion": "2026.01",
+      "complianceLevel": "FDA_APPROVED"
+    }
+  },
+  {
+    "id": "audit_1768189694444_ama1zzt",
+    "timestamp": "2026-01-12T03:48:14.444Z",
+    "action": "SAFETY_CHECK",
+    "medication": {
+      "rxcui": "1191",
+      "name": "Aspirin",
+      "dosage": null
+    },
+    "patient": {
+      "id": null,
+      "weekOfPregnancy": 8,
+      "trimester": 1
+    },
+    "result": {
+      "safe": false,
+      "category": "D",
+      "riskLevel": "high",
+      "warnings": [
+        "May cause birth defects in first trimester",
+        "Avoid unless prescribed by physician",
+        "Risk of miscarriage"
+      ],
+      "recommendedAction": "Consult physician"
+    },
+    "context": {},
+    "metadata": {
+      "processingTimeMs": 0,
+      "dataVersion": "2026.01",
+      "complianceLevel": "FDA_APPROVED"
+    }
+  },
+  {
+    "id": "audit_1768189694445_snb5k55",
+    "timestamp": "2026-01-12T03:48:14.445Z",
+    "action": "SAFETY_CHECK",
+    "medication": {
+      "rxcui": "3521",
+      "name": "Isotretinoin",
+      "dosage": null
+    },
+    "patient": {
+      "id": null,
+      "weekOfPregnancy": 15,
+      "trimester": 2
+    },
+    "result": {
+      "safe": false,
+      "category": "X",
+      "riskLevel": "severe",
+      "warnings": [
+        "ABSOLUTELY CONTRAINDICATED - DO NOT USE",
+        "Severe birth defects throughout pregnancy"
+      ],
+      "recommendedAction": "Consult physician"
+    },
+    "context": {},
+    "metadata": {
+      "processingTimeMs": 0,
+      "dataVersion": "2026.01",
+      "complianceLevel": "FDA_APPROVED"
+    }
+  }
+]
