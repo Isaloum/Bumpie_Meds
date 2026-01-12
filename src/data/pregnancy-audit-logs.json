@@ -2489,7 +2489,2107 @@
         "followUpRequired": false,
         "followUpDate": null
       }
+    },
+    {
+      "id": "audit_1768239020159_cgu3wvy",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:30:20.159Z",
+      "patientId": "patient123",
+      "sessionId": "session123",
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe to use"
+      }
+    },
+    {
+      "id": "audit_1768239020170_l8baym5",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:30:20.170Z",
+      "patientId": null,
+      "sessionId": null,
+      "data": {
+        "medicationName": "Ibuprofen",
+        "weekOfPregnancy": 15,
+        "trimester": 2,
+        "riskScore": 65,
+        "riskLevel": "high",
+        "fdaCategory": "D",
+        "safe": false,
+        "warnings": [
+          "High risk in pregnancy"
+        ],
+        "recommendation": "Avoid during pregnancy"
+      }
+    },
+    {
+      "id": "audit_1768239020173_lhgy9sj",
+      "type": "interaction_check",
+      "timestamp": "2026-01-12T17:30:20.173Z",
+      "patientId": "patient456",
+      "sessionId": "session456",
+      "data": {
+        "medications": [
+          "Ibuprofen",
+          "Aspirin"
+        ],
+        "weekOfPregnancy": 35,
+        "interactionsFound": 1,
+        "highestSeverity": "high",
+        "safe": false,
+        "recommendation": "Avoid combination"
+      }
+    },
+    {
+      "id": "audit_1768239020176_z0x3wy2",
+      "type": "risk_calculation",
+      "timestamp": "2026-01-12T17:30:20.176Z",
+      "patientId": "patient789",
+      "sessionId": null,
+      "data": {
+        "medications": [
+          "Lisinopril",
+          "Metformin"
+        ],
+        "weekOfPregnancy": 12,
+        "maternalCondition": "Hypertension",
+        "overallRiskLevel": "high",
+        "riskScore": 75,
+        "requiresProviderConsent": true,
+        "requiresObstetrician": true,
+        "recommendations": [
+          {
+            "action": "Switch medications"
+          }
+        ]
+      }
+    },
+    {
+      "id": "audit_1768239020181_m8i5bhx",
+      "type": "provider_decision",
+      "timestamp": "2026-01-12T17:30:20.181Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "provider": {
+        "id": "provider789",
+        "name": "Dr. Smith",
+        "type": "Obstetrician"
+      },
+      "data": {
+        "medicationName": "Lisinopril",
+        "decision": "switch",
+        "reasoning": "Category D - not safe in pregnancy",
+        "alternatives": [
+          "Methyldopa",
+          "Labetalol"
+        ],
+        "followUpRequired": true,
+        "followUpDate": "2026-02-01"
+      }
+    },
+    {
+      "id": "audit_1768239020204_b213otb",
+      "type": "patient_decision",
+      "timestamp": "2026-01-12T17:30:20.204Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Sertraline",
+        "decision": "continue",
+        "reasoning": "Benefits outweigh risks",
+        "acknowledgedRisks": true,
+        "providerConsulted": true
+      }
+    },
+    {
+      "id": "audit_1768239020208_yylz2kp",
+      "type": "medication_started",
+      "timestamp": "2026-01-12T17:30:20.208Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "prescriber": {
+        "id": "provider123",
+        "name": "Dr. Johnson"
+      },
+      "data": {
+        "medicationName": "Methyldopa",
+        "dosage": "250mg",
+        "frequency": "Twice daily",
+        "weekOfPregnancy": 15,
+        "indication": "Hypertension"
+      }
+    },
+    {
+      "id": "audit_1768239020210_qq7bx8n",
+      "type": "medication_stopped",
+      "timestamp": "2026-01-12T17:30:20.211Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "prescriber": {
+        "id": null,
+        "name": "Dr. Smith"
+      },
+      "data": {
+        "medicationName": "Lisinopril",
+        "weekOfPregnancy": 6,
+        "reason": "Category D - unsafe in pregnancy"
+      }
+    },
+    {
+      "id": "audit_1768239020213_u8tf7nm",
+      "type": "adverse_event",
+      "timestamp": "2026-01-12T17:30:20.213Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Sertraline",
+        "weekOfPregnancy": 28,
+        "eventType": "Neonatal adaptation syndrome",
+        "severity": "moderate",
+        "description": "Infant showing withdrawal symptoms",
+        "outcome": "Resolved after 48 hours",
+        "reportedToFDA": true
+      },
+      "critical": true
+    },
+    {
+      "id": "audit_1768239020216_88cafow",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:30:20.216Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239020218_nf45gpo",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:30:20.218Z",
+      "patientId": "patient456",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Ibuprofen",
+        "weekOfPregnancy": 15,
+        "trimester": 2,
+        "riskScore": 65,
+        "riskLevel": "high",
+        "fdaCategory": "D",
+        "safe": false,
+        "warnings": [],
+        "recommendation": "Avoid"
+      }
+    },
+    {
+      "id": "audit_1768239020223_tzbzjrb",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:30:20.223Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239020225_x5dtx7c",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:30:20.225Z",
+      "patientId": "patient456",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Ibuprofen",
+        "weekOfPregnancy": 15,
+        "trimester": 2,
+        "riskScore": 65,
+        "riskLevel": "high",
+        "fdaCategory": "D",
+        "safe": false,
+        "warnings": [],
+        "recommendation": "Avoid"
+      }
+    },
+    {
+      "id": "audit_1768239020229_25htprm",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:30:20.229Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239020231_a548fri",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:30:20.231Z",
+      "patientId": "patient456",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Ibuprofen",
+        "weekOfPregnancy": 15,
+        "trimester": 2,
+        "riskScore": 65,
+        "riskLevel": "high",
+        "fdaCategory": "D",
+        "safe": false,
+        "warnings": [],
+        "recommendation": "Avoid"
+      }
+    },
+    {
+      "id": "audit_1768239020234_rd9xpkr",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:30:20.234Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239020237_s4udjyo",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:30:20.237Z",
+      "patientId": "patient456",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Ibuprofen",
+        "weekOfPregnancy": 15,
+        "trimester": 2,
+        "riskScore": 65,
+        "riskLevel": "high",
+        "fdaCategory": "D",
+        "safe": false,
+        "warnings": [],
+        "recommendation": "Avoid"
+      }
+    },
+    {
+      "id": "audit_1768239020241_8kvaxd3",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:30:20.241Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239020246_xaoeymy",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:30:20.246Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239020251_10q38yx",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:30:20.251Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239020254_l6xiw9b",
+      "type": "provider_decision",
+      "timestamp": "2026-01-12T17:30:20.254Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "provider": {
+        "name": "Dr. Smith"
+      },
+      "data": {
+        "medicationName": "Lisinopril",
+        "decision": "discontinue",
+        "reasoning": "Unsafe",
+        "alternatives": [],
+        "followUpRequired": false,
+        "followUpDate": null
+      }
+    },
+    {
+      "id": "audit_1768239043301_1swll80",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:30:43.301Z",
+      "patientId": "patient123",
+      "sessionId": "session123",
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe to use"
+      }
+    },
+    {
+      "id": "audit_1768239043311_7jzi5qr",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:30:43.311Z",
+      "patientId": null,
+      "sessionId": null,
+      "data": {
+        "medicationName": "Ibuprofen",
+        "weekOfPregnancy": 15,
+        "trimester": 2,
+        "riskScore": 65,
+        "riskLevel": "high",
+        "fdaCategory": "D",
+        "safe": false,
+        "warnings": [
+          "High risk in pregnancy"
+        ],
+        "recommendation": "Avoid during pregnancy"
+      }
+    },
+    {
+      "id": "audit_1768239043314_kvycosk",
+      "type": "interaction_check",
+      "timestamp": "2026-01-12T17:30:43.314Z",
+      "patientId": "patient456",
+      "sessionId": "session456",
+      "data": {
+        "medications": [
+          "Ibuprofen",
+          "Aspirin"
+        ],
+        "weekOfPregnancy": 35,
+        "interactionsFound": 1,
+        "highestSeverity": "high",
+        "safe": false,
+        "recommendation": "Avoid combination"
+      }
+    },
+    {
+      "id": "audit_1768239043321_q5wfmhj",
+      "type": "risk_calculation",
+      "timestamp": "2026-01-12T17:30:43.321Z",
+      "patientId": "patient789",
+      "sessionId": null,
+      "data": {
+        "medications": [
+          "Lisinopril",
+          "Metformin"
+        ],
+        "weekOfPregnancy": 12,
+        "maternalCondition": "Hypertension",
+        "overallRiskLevel": "high",
+        "riskScore": 75,
+        "requiresProviderConsent": true,
+        "requiresObstetrician": true,
+        "recommendations": [
+          {
+            "action": "Switch medications"
+          }
+        ]
+      }
+    },
+    {
+      "id": "audit_1768239043323_u1trxm0",
+      "type": "provider_decision",
+      "timestamp": "2026-01-12T17:30:43.323Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "provider": {
+        "id": "provider789",
+        "name": "Dr. Smith",
+        "type": "Obstetrician"
+      },
+      "data": {
+        "medicationName": "Lisinopril",
+        "decision": "switch",
+        "reasoning": "Category D - not safe in pregnancy",
+        "alternatives": [
+          "Methyldopa",
+          "Labetalol"
+        ],
+        "followUpRequired": true,
+        "followUpDate": "2026-02-01"
+      }
+    },
+    {
+      "id": "audit_1768239043346_u8ch5zf",
+      "type": "patient_decision",
+      "timestamp": "2026-01-12T17:30:43.346Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Sertraline",
+        "decision": "continue",
+        "reasoning": "Benefits outweigh risks",
+        "acknowledgedRisks": true,
+        "providerConsulted": true
+      }
+    },
+    {
+      "id": "audit_1768239043350_vwd1agu",
+      "type": "medication_started",
+      "timestamp": "2026-01-12T17:30:43.350Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "prescriber": {
+        "id": "provider123",
+        "name": "Dr. Johnson"
+      },
+      "data": {
+        "medicationName": "Methyldopa",
+        "dosage": "250mg",
+        "frequency": "Twice daily",
+        "weekOfPregnancy": 15,
+        "indication": "Hypertension"
+      }
+    },
+    {
+      "id": "audit_1768239043353_uz3ajj0",
+      "type": "medication_stopped",
+      "timestamp": "2026-01-12T17:30:43.353Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "prescriber": {
+        "id": null,
+        "name": "Dr. Smith"
+      },
+      "data": {
+        "medicationName": "Lisinopril",
+        "weekOfPregnancy": 6,
+        "reason": "Category D - unsafe in pregnancy"
+      }
+    },
+    {
+      "id": "audit_1768239043356_ymlrjy4",
+      "type": "adverse_event",
+      "timestamp": "2026-01-12T17:30:43.356Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Sertraline",
+        "weekOfPregnancy": 28,
+        "eventType": "Neonatal adaptation syndrome",
+        "severity": "moderate",
+        "description": "Infant showing withdrawal symptoms",
+        "outcome": "Resolved after 48 hours",
+        "reportedToFDA": true
+      },
+      "critical": true
+    },
+    {
+      "id": "audit_1768239043359_2sckxfn",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:30:43.359Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239043362_fg64ocg",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:30:43.362Z",
+      "patientId": "patient456",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Ibuprofen",
+        "weekOfPregnancy": 15,
+        "trimester": 2,
+        "riskScore": 65,
+        "riskLevel": "high",
+        "fdaCategory": "D",
+        "safe": false,
+        "warnings": [],
+        "recommendation": "Avoid"
+      }
+    },
+    {
+      "id": "audit_1768239043365_vk0e29r",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:30:43.365Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239043367_phxsmdl",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:30:43.367Z",
+      "patientId": "patient456",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Ibuprofen",
+        "weekOfPregnancy": 15,
+        "trimester": 2,
+        "riskScore": 65,
+        "riskLevel": "high",
+        "fdaCategory": "D",
+        "safe": false,
+        "warnings": [],
+        "recommendation": "Avoid"
+      }
+    },
+    {
+      "id": "audit_1768239043372_w22ww8r",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:30:43.372Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239043374_k6mzin3",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:30:43.374Z",
+      "patientId": "patient456",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Ibuprofen",
+        "weekOfPregnancy": 15,
+        "trimester": 2,
+        "riskScore": 65,
+        "riskLevel": "high",
+        "fdaCategory": "D",
+        "safe": false,
+        "warnings": [],
+        "recommendation": "Avoid"
+      }
+    },
+    {
+      "id": "audit_1768239043378_is6uzmo",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:30:43.378Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239043380_u7avb98",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:30:43.380Z",
+      "patientId": "patient456",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Ibuprofen",
+        "weekOfPregnancy": 15,
+        "trimester": 2,
+        "riskScore": 65,
+        "riskLevel": "high",
+        "fdaCategory": "D",
+        "safe": false,
+        "warnings": [],
+        "recommendation": "Avoid"
+      }
+    },
+    {
+      "id": "audit_1768239043384_wtxq0ko",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:30:43.384Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239043390_h48ntx4",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:30:43.390Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239043395_yhonooc",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:30:43.395Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239043398_xec85hy",
+      "type": "provider_decision",
+      "timestamp": "2026-01-12T17:30:43.398Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "provider": {
+        "name": "Dr. Smith"
+      },
+      "data": {
+        "medicationName": "Lisinopril",
+        "decision": "discontinue",
+        "reasoning": "Unsafe",
+        "alternatives": [],
+        "followUpRequired": false,
+        "followUpDate": null
+      }
+    },
+    {
+      "id": "audit_1768239070642_jqqqj4o",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:31:10.642Z",
+      "patientId": "integration_test_patient",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "moderate",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "✅ PROBABLY SAFE: This medication is generally considered safe during pregnancy, but consult your healthcare provider to confirm."
+      }
+    },
+    {
+      "id": "audit_1768239070655_051rz3e",
+      "type": "risk_calculation",
+      "timestamp": "2026-01-12T17:31:10.655Z",
+      "patientId": "high_risk_patient",
+      "sessionId": null,
+      "data": {
+        "medications": [
+          "Atorvastatin"
+        ],
+        "weekOfPregnancy": 12,
+        "maternalCondition": null,
+        "overallRiskLevel": "critical",
+        "riskScore": 100,
+        "requiresProviderConsent": true,
+        "requiresObstetrician": true,
+        "recommendations": [
+          {
+            "priority": "CRITICAL",
+            "action": "DISCONTINUE IMMEDIATELY",
+            "medication": "Atorvastatin",
+            "reason": "Category X - Contraindicated in pregnancy",
+            "urgency": "immediate"
+          },
+          {
+            "priority": "CRITICAL",
+            "action": "Seek immediate medical attention",
+            "reason": "Critical drug interactions detected during pregnancy",
+            "urgency": "immediate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "audit_1768239070687_aia7r0d",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:31:10.687Z",
+      "patientId": "audit_trail_patient",
+      "sessionId": "session_1768239070687",
+      "data": {
+        "medicationName": "Sertraline",
+        "weekOfPregnancy": 8,
+        "trimester": 1,
+        "riskScore": 50,
+        "riskLevel": "moderate",
+        "fdaCategory": "C",
+        "safe": false,
+        "warnings": [
+          "Use with caution in first trimester"
+        ],
+        "recommendation": "Consult provider"
+      }
+    },
+    {
+      "id": "audit_1768239070696_m71hxgk",
+      "type": "risk_calculation",
+      "timestamp": "2026-01-12T17:31:10.696Z",
+      "patientId": "audit_trail_patient",
+      "sessionId": "session_1768239070687",
+      "data": {
+        "medications": [
+          "Sertraline"
+        ],
+        "weekOfPregnancy": 8,
+        "maternalCondition": null,
+        "overallRiskLevel": "moderate",
+        "riskScore": 50,
+        "requiresProviderConsent": true,
+        "requiresObstetrician": false,
+        "recommendations": []
+      }
+    },
+    {
+      "id": "audit_1768239070950_7lt9bks",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:31:10.950Z",
+      "patientId": "patient123",
+      "sessionId": "session123",
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe to use"
+      }
+    },
+    {
+      "id": "audit_1768239070954_b4a8bqc",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:31:10.954Z",
+      "patientId": null,
+      "sessionId": null,
+      "data": {
+        "medicationName": "Ibuprofen",
+        "weekOfPregnancy": 15,
+        "trimester": 2,
+        "riskScore": 65,
+        "riskLevel": "high",
+        "fdaCategory": "D",
+        "safe": false,
+        "warnings": [
+          "High risk in pregnancy"
+        ],
+        "recommendation": "Avoid during pregnancy"
+      }
+    },
+    {
+      "id": "audit_1768239070957_o9cqrtz",
+      "type": "interaction_check",
+      "timestamp": "2026-01-12T17:31:10.957Z",
+      "patientId": "patient456",
+      "sessionId": "session456",
+      "data": {
+        "medications": [
+          "Ibuprofen",
+          "Aspirin"
+        ],
+        "weekOfPregnancy": 35,
+        "interactionsFound": 1,
+        "highestSeverity": "high",
+        "safe": false,
+        "recommendation": "Avoid combination"
+      }
+    },
+    {
+      "id": "audit_1768239070960_hkyo56m",
+      "type": "risk_calculation",
+      "timestamp": "2026-01-12T17:31:10.960Z",
+      "patientId": "patient789",
+      "sessionId": null,
+      "data": {
+        "medications": [
+          "Lisinopril",
+          "Metformin"
+        ],
+        "weekOfPregnancy": 12,
+        "maternalCondition": "Hypertension",
+        "overallRiskLevel": "high",
+        "riskScore": 75,
+        "requiresProviderConsent": true,
+        "requiresObstetrician": true,
+        "recommendations": [
+          {
+            "action": "Switch medications"
+          }
+        ]
+      }
+    },
+    {
+      "id": "audit_1768239070963_066bsgb",
+      "type": "provider_decision",
+      "timestamp": "2026-01-12T17:31:10.963Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "provider": {
+        "id": "provider789",
+        "name": "Dr. Smith",
+        "type": "Obstetrician"
+      },
+      "data": {
+        "medicationName": "Lisinopril",
+        "decision": "switch",
+        "reasoning": "Category D - not safe in pregnancy",
+        "alternatives": [
+          "Methyldopa",
+          "Labetalol"
+        ],
+        "followUpRequired": true,
+        "followUpDate": "2026-02-01"
+      }
+    },
+    {
+      "id": "audit_1768239070982_bssfww1",
+      "type": "patient_decision",
+      "timestamp": "2026-01-12T17:31:10.982Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Sertraline",
+        "decision": "continue",
+        "reasoning": "Benefits outweigh risks",
+        "acknowledgedRisks": true,
+        "providerConsulted": true
+      }
+    },
+    {
+      "id": "audit_1768239070986_je5cgkg",
+      "type": "medication_started",
+      "timestamp": "2026-01-12T17:31:10.986Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "prescriber": {
+        "id": "provider123",
+        "name": "Dr. Johnson"
+      },
+      "data": {
+        "medicationName": "Methyldopa",
+        "dosage": "250mg",
+        "frequency": "Twice daily",
+        "weekOfPregnancy": 15,
+        "indication": "Hypertension"
+      }
+    },
+    {
+      "id": "audit_1768239070989_ivoaddy",
+      "type": "medication_stopped",
+      "timestamp": "2026-01-12T17:31:10.990Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "prescriber": {
+        "id": null,
+        "name": "Dr. Smith"
+      },
+      "data": {
+        "medicationName": "Lisinopril",
+        "weekOfPregnancy": 6,
+        "reason": "Category D - unsafe in pregnancy"
+      }
+    },
+    {
+      "id": "audit_1768239070992_xbmdp5g",
+      "type": "adverse_event",
+      "timestamp": "2026-01-12T17:31:10.992Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Sertraline",
+        "weekOfPregnancy": 28,
+        "eventType": "Neonatal adaptation syndrome",
+        "severity": "moderate",
+        "description": "Infant showing withdrawal symptoms",
+        "outcome": "Resolved after 48 hours",
+        "reportedToFDA": true
+      },
+      "critical": true
+    },
+    {
+      "id": "audit_1768239070995_9a28xxc",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:31:10.995Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239070998_9njje8r",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:31:10.998Z",
+      "patientId": "patient456",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Ibuprofen",
+        "weekOfPregnancy": 15,
+        "trimester": 2,
+        "riskScore": 65,
+        "riskLevel": "high",
+        "fdaCategory": "D",
+        "safe": false,
+        "warnings": [],
+        "recommendation": "Avoid"
+      }
+    },
+    {
+      "id": "audit_1768239071002_y28y8hh",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:31:11.002Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239071005_sty53fc",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:31:11.005Z",
+      "patientId": "patient456",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Ibuprofen",
+        "weekOfPregnancy": 15,
+        "trimester": 2,
+        "riskScore": 65,
+        "riskLevel": "high",
+        "fdaCategory": "D",
+        "safe": false,
+        "warnings": [],
+        "recommendation": "Avoid"
+      }
+    },
+    {
+      "id": "audit_1768239071009_jfj82iy",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:31:11.009Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239071011_bxkeq4k",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:31:11.011Z",
+      "patientId": "patient456",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Ibuprofen",
+        "weekOfPregnancy": 15,
+        "trimester": 2,
+        "riskScore": 65,
+        "riskLevel": "high",
+        "fdaCategory": "D",
+        "safe": false,
+        "warnings": [],
+        "recommendation": "Avoid"
+      }
+    },
+    {
+      "id": "audit_1768239071015_izp5g9t",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:31:11.015Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239071017_p5enc1w",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:31:11.017Z",
+      "patientId": "patient456",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Ibuprofen",
+        "weekOfPregnancy": 15,
+        "trimester": 2,
+        "riskScore": 65,
+        "riskLevel": "high",
+        "fdaCategory": "D",
+        "safe": false,
+        "warnings": [],
+        "recommendation": "Avoid"
+      }
+    },
+    {
+      "id": "audit_1768239071022_gimtfyy",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:31:11.022Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239071027_wfdrme3",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:31:11.027Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239071032_6erfnrq",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:31:11.032Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239071034_bnskjln",
+      "type": "provider_decision",
+      "timestamp": "2026-01-12T17:31:11.034Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "provider": {
+        "name": "Dr. Smith"
+      },
+      "data": {
+        "medicationName": "Lisinopril",
+        "decision": "discontinue",
+        "reasoning": "Unsafe",
+        "alternatives": [],
+        "followUpRequired": false,
+        "followUpDate": null
+      }
+    },
+    {
+      "id": "audit_1768239116526_2vroztq",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:31:56.526Z",
+      "patientId": "integration_test_patient",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "moderate",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "✅ PROBABLY SAFE: This medication is generally considered safe during pregnancy, but consult your healthcare provider to confirm."
+      }
+    },
+    {
+      "id": "audit_1768239116540_0a1fbiy",
+      "type": "risk_calculation",
+      "timestamp": "2026-01-12T17:31:56.540Z",
+      "patientId": "high_risk_patient",
+      "sessionId": null,
+      "data": {
+        "medications": [
+          "Atorvastatin"
+        ],
+        "weekOfPregnancy": 12,
+        "maternalCondition": null,
+        "overallRiskLevel": "critical",
+        "riskScore": 100,
+        "requiresProviderConsent": true,
+        "requiresObstetrician": true,
+        "recommendations": [
+          {
+            "priority": "CRITICAL",
+            "action": "DISCONTINUE IMMEDIATELY",
+            "medication": "Atorvastatin",
+            "reason": "Category X - Contraindicated in pregnancy",
+            "urgency": "immediate"
+          },
+          {
+            "priority": "CRITICAL",
+            "action": "Seek immediate medical attention",
+            "reason": "Critical drug interactions detected during pregnancy",
+            "urgency": "immediate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "audit_1768239116571_uto7lqj",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:31:56.571Z",
+      "patientId": "audit_trail_patient",
+      "sessionId": "session_1768239116571",
+      "data": {
+        "medicationName": "Sertraline",
+        "weekOfPregnancy": 8,
+        "trimester": 1,
+        "riskScore": 50,
+        "riskLevel": "moderate",
+        "fdaCategory": "C",
+        "safe": false,
+        "warnings": [
+          "Use with caution in first trimester"
+        ],
+        "recommendation": "Consult provider"
+      }
+    },
+    {
+      "id": "audit_1768239116576_lyikrv9",
+      "type": "risk_calculation",
+      "timestamp": "2026-01-12T17:31:56.577Z",
+      "patientId": "audit_trail_patient",
+      "sessionId": "session_1768239116571",
+      "data": {
+        "medications": [
+          "Sertraline"
+        ],
+        "weekOfPregnancy": 8,
+        "maternalCondition": null,
+        "overallRiskLevel": "moderate",
+        "riskScore": 50,
+        "requiresProviderConsent": true,
+        "requiresObstetrician": false,
+        "recommendations": []
+      }
+    },
+    {
+      "id": "audit_1768239116820_b8b89fv",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:31:56.820Z",
+      "patientId": "patient123",
+      "sessionId": "session123",
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe to use"
+      }
+    },
+    {
+      "id": "audit_1768239116824_tqmq2nx",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:31:56.824Z",
+      "patientId": null,
+      "sessionId": null,
+      "data": {
+        "medicationName": "Ibuprofen",
+        "weekOfPregnancy": 15,
+        "trimester": 2,
+        "riskScore": 65,
+        "riskLevel": "high",
+        "fdaCategory": "D",
+        "safe": false,
+        "warnings": [
+          "High risk in pregnancy"
+        ],
+        "recommendation": "Avoid during pregnancy"
+      }
+    },
+    {
+      "id": "audit_1768239116828_cvujdj3",
+      "type": "interaction_check",
+      "timestamp": "2026-01-12T17:31:56.828Z",
+      "patientId": "patient456",
+      "sessionId": "session456",
+      "data": {
+        "medications": [
+          "Ibuprofen",
+          "Aspirin"
+        ],
+        "weekOfPregnancy": 35,
+        "interactionsFound": 1,
+        "highestSeverity": "high",
+        "safe": false,
+        "recommendation": "Avoid combination"
+      }
+    },
+    {
+      "id": "audit_1768239116831_ihmhrs8",
+      "type": "risk_calculation",
+      "timestamp": "2026-01-12T17:31:56.831Z",
+      "patientId": "patient789",
+      "sessionId": null,
+      "data": {
+        "medications": [
+          "Lisinopril",
+          "Metformin"
+        ],
+        "weekOfPregnancy": 12,
+        "maternalCondition": "Hypertension",
+        "overallRiskLevel": "high",
+        "riskScore": 75,
+        "requiresProviderConsent": true,
+        "requiresObstetrician": true,
+        "recommendations": [
+          {
+            "action": "Switch medications"
+          }
+        ]
+      }
+    },
+    {
+      "id": "audit_1768239116834_40mnynm",
+      "type": "provider_decision",
+      "timestamp": "2026-01-12T17:31:56.834Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "provider": {
+        "id": "provider789",
+        "name": "Dr. Smith",
+        "type": "Obstetrician"
+      },
+      "data": {
+        "medicationName": "Lisinopril",
+        "decision": "switch",
+        "reasoning": "Category D - not safe in pregnancy",
+        "alternatives": [
+          "Methyldopa",
+          "Labetalol"
+        ],
+        "followUpRequired": true,
+        "followUpDate": "2026-02-01"
+      }
+    },
+    {
+      "id": "audit_1768239116853_lnslcsb",
+      "type": "patient_decision",
+      "timestamp": "2026-01-12T17:31:56.853Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Sertraline",
+        "decision": "continue",
+        "reasoning": "Benefits outweigh risks",
+        "acknowledgedRisks": true,
+        "providerConsulted": true
+      }
+    },
+    {
+      "id": "audit_1768239116857_8petjq8",
+      "type": "medication_started",
+      "timestamp": "2026-01-12T17:31:56.857Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "prescriber": {
+        "id": "provider123",
+        "name": "Dr. Johnson"
+      },
+      "data": {
+        "medicationName": "Methyldopa",
+        "dosage": "250mg",
+        "frequency": "Twice daily",
+        "weekOfPregnancy": 15,
+        "indication": "Hypertension"
+      }
+    },
+    {
+      "id": "audit_1768239116860_xvmmu0s",
+      "type": "medication_stopped",
+      "timestamp": "2026-01-12T17:31:56.860Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "prescriber": {
+        "id": null,
+        "name": "Dr. Smith"
+      },
+      "data": {
+        "medicationName": "Lisinopril",
+        "weekOfPregnancy": 6,
+        "reason": "Category D - unsafe in pregnancy"
+      }
+    },
+    {
+      "id": "audit_1768239116863_jjix0p4",
+      "type": "adverse_event",
+      "timestamp": "2026-01-12T17:31:56.863Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Sertraline",
+        "weekOfPregnancy": 28,
+        "eventType": "Neonatal adaptation syndrome",
+        "severity": "moderate",
+        "description": "Infant showing withdrawal symptoms",
+        "outcome": "Resolved after 48 hours",
+        "reportedToFDA": true
+      },
+      "critical": true
+    },
+    {
+      "id": "audit_1768239116866_svqsd7f",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:31:56.866Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239116868_xmvzisd",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:31:56.868Z",
+      "patientId": "patient456",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Ibuprofen",
+        "weekOfPregnancy": 15,
+        "trimester": 2,
+        "riskScore": 65,
+        "riskLevel": "high",
+        "fdaCategory": "D",
+        "safe": false,
+        "warnings": [],
+        "recommendation": "Avoid"
+      }
+    },
+    {
+      "id": "audit_1768239116873_r5evhn8",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:31:56.873Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239116875_g2f8kil",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:31:56.875Z",
+      "patientId": "patient456",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Ibuprofen",
+        "weekOfPregnancy": 15,
+        "trimester": 2,
+        "riskScore": 65,
+        "riskLevel": "high",
+        "fdaCategory": "D",
+        "safe": false,
+        "warnings": [],
+        "recommendation": "Avoid"
+      }
+    },
+    {
+      "id": "audit_1768239116879_2f8tut2",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:31:56.879Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239116881_cxbmf43",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:31:56.881Z",
+      "patientId": "patient456",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Ibuprofen",
+        "weekOfPregnancy": 15,
+        "trimester": 2,
+        "riskScore": 65,
+        "riskLevel": "high",
+        "fdaCategory": "D",
+        "safe": false,
+        "warnings": [],
+        "recommendation": "Avoid"
+      }
+    },
+    {
+      "id": "audit_1768239116886_o8qu3hr",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:31:56.886Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239116888_hzer1kr",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:31:56.888Z",
+      "patientId": "patient456",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Ibuprofen",
+        "weekOfPregnancy": 15,
+        "trimester": 2,
+        "riskScore": 65,
+        "riskLevel": "high",
+        "fdaCategory": "D",
+        "safe": false,
+        "warnings": [],
+        "recommendation": "Avoid"
+      }
+    },
+    {
+      "id": "audit_1768239116892_dvzedma",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:31:56.892Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239116898_193vjvn",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:31:56.898Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239116903_ufx3oc1",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:31:56.903Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239116906_8phem2s",
+      "type": "provider_decision",
+      "timestamp": "2026-01-12T17:31:56.906Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "provider": {
+        "name": "Dr. Smith"
+      },
+      "data": {
+        "medicationName": "Lisinopril",
+        "decision": "discontinue",
+        "reasoning": "Unsafe",
+        "alternatives": [],
+        "followUpRequired": false,
+        "followUpDate": null
+      }
+    },
+    {
+      "id": "audit_1768239199312_4xi22p3",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:33:19.312Z",
+      "patientId": "patient123",
+      "sessionId": "session123",
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe to use"
+      }
+    },
+    {
+      "id": "audit_1768239199322_neq7llq",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:33:19.322Z",
+      "patientId": null,
+      "sessionId": null,
+      "data": {
+        "medicationName": "Ibuprofen",
+        "weekOfPregnancy": 15,
+        "trimester": 2,
+        "riskScore": 65,
+        "riskLevel": "high",
+        "fdaCategory": "D",
+        "safe": false,
+        "warnings": [
+          "High risk in pregnancy"
+        ],
+        "recommendation": "Avoid during pregnancy"
+      }
+    },
+    {
+      "id": "audit_1768239199326_b90bkvg",
+      "type": "interaction_check",
+      "timestamp": "2026-01-12T17:33:19.326Z",
+      "patientId": "patient456",
+      "sessionId": "session456",
+      "data": {
+        "medications": [
+          "Ibuprofen",
+          "Aspirin"
+        ],
+        "weekOfPregnancy": 35,
+        "interactionsFound": 1,
+        "highestSeverity": "high",
+        "safe": false,
+        "recommendation": "Avoid combination"
+      }
+    },
+    {
+      "id": "audit_1768239199332_o39bdb0",
+      "type": "risk_calculation",
+      "timestamp": "2026-01-12T17:33:19.332Z",
+      "patientId": "patient789",
+      "sessionId": null,
+      "data": {
+        "medications": [
+          "Lisinopril",
+          "Metformin"
+        ],
+        "weekOfPregnancy": 12,
+        "maternalCondition": "Hypertension",
+        "overallRiskLevel": "high",
+        "riskScore": 75,
+        "requiresProviderConsent": true,
+        "requiresObstetrician": true,
+        "recommendations": [
+          {
+            "action": "Switch medications"
+          }
+        ]
+      }
+    },
+    {
+      "id": "audit_1768239199336_ucj0m46",
+      "type": "provider_decision",
+      "timestamp": "2026-01-12T17:33:19.336Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "provider": {
+        "id": "provider789",
+        "name": "Dr. Smith",
+        "type": "Obstetrician"
+      },
+      "data": {
+        "medicationName": "Lisinopril",
+        "decision": "switch",
+        "reasoning": "Category D - not safe in pregnancy",
+        "alternatives": [
+          "Methyldopa",
+          "Labetalol"
+        ],
+        "followUpRequired": true,
+        "followUpDate": "2026-02-01"
+      }
+    },
+    {
+      "id": "audit_1768239199358_hao0gsm",
+      "type": "patient_decision",
+      "timestamp": "2026-01-12T17:33:19.358Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Sertraline",
+        "decision": "continue",
+        "reasoning": "Benefits outweigh risks",
+        "acknowledgedRisks": true,
+        "providerConsulted": true
+      }
+    },
+    {
+      "id": "audit_1768239199362_lckyizn",
+      "type": "medication_started",
+      "timestamp": "2026-01-12T17:33:19.362Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "prescriber": {
+        "id": "provider123",
+        "name": "Dr. Johnson"
+      },
+      "data": {
+        "medicationName": "Methyldopa",
+        "dosage": "250mg",
+        "frequency": "Twice daily",
+        "weekOfPregnancy": 15,
+        "indication": "Hypertension"
+      }
+    },
+    {
+      "id": "audit_1768239199366_iom7grv",
+      "type": "medication_stopped",
+      "timestamp": "2026-01-12T17:33:19.366Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "prescriber": {
+        "id": null,
+        "name": "Dr. Smith"
+      },
+      "data": {
+        "medicationName": "Lisinopril",
+        "weekOfPregnancy": 6,
+        "reason": "Category D - unsafe in pregnancy"
+      }
+    },
+    {
+      "id": "audit_1768239199369_ih5w01q",
+      "type": "adverse_event",
+      "timestamp": "2026-01-12T17:33:19.369Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Sertraline",
+        "weekOfPregnancy": 28,
+        "eventType": "Neonatal adaptation syndrome",
+        "severity": "moderate",
+        "description": "Infant showing withdrawal symptoms",
+        "outcome": "Resolved after 48 hours",
+        "reportedToFDA": true
+      },
+      "critical": true
+    },
+    {
+      "id": "audit_1768239199373_8pbo8nr",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:33:19.373Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239199375_i4q9rg1",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:33:19.375Z",
+      "patientId": "patient456",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Ibuprofen",
+        "weekOfPregnancy": 15,
+        "trimester": 2,
+        "riskScore": 65,
+        "riskLevel": "high",
+        "fdaCategory": "D",
+        "safe": false,
+        "warnings": [],
+        "recommendation": "Avoid"
+      }
+    },
+    {
+      "id": "audit_1768239199380_m0fmckr",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:33:19.380Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239199383_dhq694y",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:33:19.383Z",
+      "patientId": "patient456",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Ibuprofen",
+        "weekOfPregnancy": 15,
+        "trimester": 2,
+        "riskScore": 65,
+        "riskLevel": "high",
+        "fdaCategory": "D",
+        "safe": false,
+        "warnings": [],
+        "recommendation": "Avoid"
+      }
+    },
+    {
+      "id": "audit_1768239199388_cloc9sx",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:33:19.388Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239199391_dz2jfja",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:33:19.391Z",
+      "patientId": "patient456",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Ibuprofen",
+        "weekOfPregnancy": 15,
+        "trimester": 2,
+        "riskScore": 65,
+        "riskLevel": "high",
+        "fdaCategory": "D",
+        "safe": false,
+        "warnings": [],
+        "recommendation": "Avoid"
+      }
+    },
+    {
+      "id": "audit_1768239199395_8qucf2m",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:33:19.395Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239199398_btjhfl7",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:33:19.398Z",
+      "patientId": "patient456",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Ibuprofen",
+        "weekOfPregnancy": 15,
+        "trimester": 2,
+        "riskScore": 65,
+        "riskLevel": "high",
+        "fdaCategory": "D",
+        "safe": false,
+        "warnings": [],
+        "recommendation": "Avoid"
+      }
+    },
+    {
+      "id": "audit_1768239199403_2qzpzte",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:33:19.403Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239199409_rh7kgkt",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:33:19.409Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239199416_trusuwr",
+      "type": "safety_check",
+      "timestamp": "2026-01-12T17:33:19.416Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "data": {
+        "medicationName": "Acetaminophen",
+        "weekOfPregnancy": 20,
+        "trimester": 2,
+        "riskScore": 25,
+        "riskLevel": "low",
+        "fdaCategory": "B",
+        "safe": true,
+        "warnings": [],
+        "recommendation": "Safe"
+      }
+    },
+    {
+      "id": "audit_1768239199418_sm2y1vb",
+      "type": "provider_decision",
+      "timestamp": "2026-01-12T17:33:19.418Z",
+      "patientId": "patient123",
+      "sessionId": null,
+      "provider": {
+        "name": "Dr. Smith"
+      },
+      "data": {
+        "medicationName": "Lisinopril",
+        "decision": "discontinue",
+        "reasoning": "Unsafe",
+        "alternatives": [],
+        "followUpRequired": false,
+        "followUpDate": null
+      }
     }
   ],
-  "lastUpdated": "2026-01-12T17:16:28.438Z"
+  "lastUpdated": "2026-01-12T17:33:19.420Z"
 }
