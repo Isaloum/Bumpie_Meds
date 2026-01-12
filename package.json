@@ -1,0 +1,63 @@
+{
+  "name": "bumpie-meds",
+  "version": "1.0.0",
+  "description": "Pregnancy medication safety module for healthcare apps - FDA compliant tracking across trimesters",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "test:unit": "jest tests/unit",
+    "test:integration": "jest tests/integration",
+    "lint": "eslint src/**/*.js",
+    "validate": "node scripts/validate-data.js",
+    "build": "node scripts/build-data.js"
+  },
+  "keywords": [
+    "pregnancy",
+    "medication",
+    "safety",
+    "healthcare",
+    "fda",
+    "maternal-health",
+    "pregnancy-tracker",
+    "trimester",
+    "medication-safety"
+  ],
+  "author": "Ihab Saloum",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Isaloum/Bumpie_Meds.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Isaloum/Bumpie_Meds/issues"
+  },
+  "homepage": "https://github.com/Isaloum/Bumpie_Meds#readme",
+  "dependencies": {
+    "date-fns": "^3.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "eslint": "^8.0.0",
+    "@types/jest": "^29.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coverageDirectory": "coverage",
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/data/**"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    }
+  }
+}

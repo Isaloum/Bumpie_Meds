@@ -1,0 +1,278 @@
+[
+  {
+    "id": "med_rxcui_161",
+    "rxcui": "161",
+    "name": "Acetaminophen",
+    "genericName": "Acetaminophen",
+    "brandNames": ["Tylenol", "Paracetamol"],
+    "pregnancyCategory": {
+      "fda": "B",
+      "trimester1": {
+        "safe": true,
+        "risk": "low",
+        "warnings": ["Generally safe when used as directed", "Do not exceed recommended dosage"],
+        "alternatives": [],
+        "maxDosage": "3000mg daily"
+      },
+      "trimester2": {
+        "safe": true,
+        "risk": "low",
+        "warnings": ["Generally safe when used as directed"],
+        "maxDosage": "3000mg daily"
+      },
+      "trimester3": {
+        "safe": true,
+        "risk": "low",
+        "warnings": ["Generally safe when used as directed"],
+        "maxDosage": "3000mg daily"
+      }
+    },
+    "contraindications": ["Liver disease", "Alcohol dependence"],
+    "sources": [
+      {
+        "type": "FDA",
+        "url": "https://www.fda.gov/drugs",
+        "date": "2025-11-01"
+      }
+    ],
+    "lastUpdated": "2025-12-01T00:00:00Z",
+    "verified": true
+  },
+  {
+    "id": "med_rxcui_1191",
+    "rxcui": "1191",
+    "name": "Aspirin",
+    "genericName": "Acetylsalicylic Acid",
+    "brandNames": ["Bayer Aspirin", "Ecotrin"],
+    "pregnancyCategory": {
+      "fda": "D",
+      "trimester1": {
+        "safe": false,
+        "risk": "high",
+        "warnings": [
+          "May cause birth defects in first trimester",
+          "Avoid unless prescribed by physician",
+          "Risk of miscarriage"
+        ],
+        "alternatives": ["Acetaminophen"]
+      },
+      "trimester2": {
+        "safe": true,
+        "risk": "low",
+        "warnings": ["Low-dose (81mg) may be acceptable with doctor approval"],
+        "maxDosage": "81mg daily"
+      },
+      "trimester3": {
+        "safe": false,
+        "risk": "high",
+        "warnings": [
+          "Risk of premature closure of ductus arteriosus",
+          "Bleeding complications during delivery",
+          "Avoid after week 32"
+        ],
+        "alternatives": ["Acetaminophen"]
+      }
+    },
+    "contraindications": [
+      "Third trimester pregnancy (after week 32)",
+      "History of bleeding disorders",
+      "Upcoming delivery"
+    ],
+    "sources": [
+      {
+        "type": "FDA",
+        "url": "https://www.fda.gov/drugs",
+        "date": "2024-01-15"
+      },
+      {
+        "type": "ACOG",
+        "url": "https://www.acog.org",
+        "date": "2023-11-20"
+      }
+    ],
+    "lastUpdated": "2025-12-01T00:00:00Z",
+    "verified": true
+  },
+  {
+    "id": "med_rxcui_4493",
+    "rxcui": "4493",
+    "name": "Ibuprofen",
+    "genericName": "Ibuprofen",
+    "brandNames": ["Advil", "Motrin"],
+    "pregnancyCategory": {
+      "fda": "D",
+      "trimester1": {
+        "safe": false,
+        "risk": "moderate",
+        "warnings": [
+          "Avoid in first trimester",
+          "May cause miscarriage",
+          "Not recommended during pregnancy"
+        ],
+        "alternatives": ["Acetaminophen"]
+      },
+      "trimester2": {
+        "safe": false,
+        "risk": "moderate",
+        "warnings": [
+          "Use only if benefits outweigh risks",
+          "Short-term use only with doctor approval"
+        ],
+        "alternatives": ["Acetaminophen"]
+      },
+      "trimester3": {
+        "safe": false,
+        "risk": "high",
+        "warnings": [
+          "Avoid completely in third trimester",
+          "Risk of premature closure of ductus arteriosus",
+          "May delay labor"
+        ],
+        "alternatives": ["Acetaminophen"]
+      }
+    },
+    "contraindications": [
+      "Third trimester pregnancy",
+      "History of kidney problems",
+      "Heart conditions"
+    ],
+    "sources": [
+      {
+        "type": "FDA",
+        "url": "https://www.fda.gov/drugs",
+        "date": "2024-06-10"
+      }
+    ],
+    "lastUpdated": "2025-12-01T00:00:00Z",
+    "verified": true
+  },
+  {
+    "id": "med_rxcui_3521",
+    "rxcui": "3521",
+    "name": "Isotretinoin",
+    "genericName": "Isotretinoin",
+    "brandNames": ["Accutane", "Claravis", "Absorica"],
+    "pregnancyCategory": {
+      "fda": "X",
+      "trimester1": {
+        "safe": false,
+        "risk": "severe",
+        "warnings": [
+          "ABSOLUTELY CONTRAINDICATED - DO NOT USE",
+          "Causes severe birth defects",
+          "Requires negative pregnancy test before use",
+          "Must use two forms of contraception"
+        ],
+        "alternatives": ["Consult dermatologist for safe alternatives"]
+      },
+      "trimester2": {
+        "safe": false,
+        "risk": "severe",
+        "warnings": [
+          "ABSOLUTELY CONTRAINDICATED - DO NOT USE",
+          "Severe birth defects throughout pregnancy"
+        ],
+        "alternatives": ["Consult dermatologist"]
+      },
+      "trimester3": {
+        "safe": false,
+        "risk": "severe",
+        "warnings": [
+          "ABSOLUTELY CONTRAINDICATED - DO NOT USE",
+          "Severe birth defects throughout pregnancy"
+        ],
+        "alternatives": ["Consult dermatologist"]
+      }
+    },
+    "contraindications": [
+      "Pregnancy",
+      "Planning pregnancy",
+      "No reliable contraception"
+    ],
+    "sources": [
+      {
+        "type": "FDA",
+        "url": "https://www.fda.gov/drugs/postmarket-drug-safety-information-patients-and-providers/isotretinoin-accutane-questions-and-answers",
+        "date": "2023-08-15"
+      }
+    ],
+    "lastUpdated": "2025-12-01T00:00:00Z",
+    "verified": true
+  },
+  {
+    "id": "med_rxcui_8123",
+    "rxcui": "8123",
+    "name": "Prenatal Vitamins",
+    "genericName": "Prenatal Multivitamin",
+    "brandNames": ["Prenate", "CitraNatal", "One A Day Prenatal"],
+    "pregnancyCategory": {
+      "fda": "A",
+      "trimester1": {
+        "safe": true,
+        "risk": "minimal",
+        "warnings": ["Recommended daily", "Especially important for folic acid"],
+        "alternatives": []
+      },
+      "trimester2": {
+        "safe": true,
+        "risk": "minimal",
+        "warnings": ["Continue daily use"],
+        "alternatives": []
+      },
+      "trimester3": {
+        "safe": true,
+        "risk": "minimal",
+        "warnings": ["Continue daily use"],
+        "alternatives": []
+      }
+    },
+    "contraindications": [],
+    "sources": [
+      {
+        "type": "ACOG",
+        "url": "https://www.acog.org",
+        "date": "2024-03-01"
+      }
+    ],
+    "lastUpdated": "2025-12-01T00:00:00Z",
+    "verified": true
+  },
+  {
+    "id": "med_rxcui_5640",
+    "rxcui": "5640",
+    "name": "Metformin",
+    "genericName": "Metformin",
+    "brandNames": ["Glucophage", "Fortamet"],
+    "pregnancyCategory": {
+      "fda": "B",
+      "trimester1": {
+        "safe": true,
+        "risk": "low",
+        "warnings": ["Generally safe for gestational diabetes", "Monitor blood sugar closely"],
+        "alternatives": []
+      },
+      "trimester2": {
+        "safe": true,
+        "risk": "low",
+        "warnings": ["Continue under medical supervision"],
+        "alternatives": []
+      },
+      "trimester3": {
+        "safe": true,
+        "risk": "low",
+        "warnings": ["Continue under medical supervision"],
+        "alternatives": []
+      }
+    },
+    "contraindications": ["Kidney disease", "Lactic acidosis history"],
+    "sources": [
+      {
+        "type": "FDA",
+        "url": "https://www.fda.gov/drugs",
+        "date": "2024-09-12"
+      }
+    ],
+    "lastUpdated": "2025-12-01T00:00:00Z",
+    "verified": true
+  }
+]
