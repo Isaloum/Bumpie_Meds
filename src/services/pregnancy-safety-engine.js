@@ -146,17 +146,7 @@ function getTrimester(weekOfPregnancy) {
 function isCriticalPeriod(weekOfPregnancy) {
   const trimester = getTrimester(weekOfPregnancy);
   
-  // First trimester is always critical (organogenesis)
-  if (trimester.number === 1) {
-    return {
-      isCritical: true,
-      reason: 'First trimester - organ formation period',
-      developments: trimester.criticalDevelopment,
-      severity: 'high'
-    };
-  }
-
-  // Week-specific critical periods
+  // Week-specific critical periods (check first for specificity)
   const criticalWeeks = {
     // Neural tube formation
     3: { reason: 'Neural tube formation', severity: 'critical' },
@@ -178,6 +168,16 @@ function isCriticalPeriod(weekOfPregnancy) {
       isCritical: true,
       ...criticalWeeks[weekOfPregnancy],
       week: weekOfPregnancy
+    };
+  }
+  
+  // First trimester is always critical (organogenesis) if not covered above
+  if (trimester.number === 1) {
+    return {
+      isCritical: true,
+      reason: 'First trimester - organ formation period',
+      developments: trimester.criticalDevelopment,
+      severity: 'critical'
     };
   }
 
